@@ -1,0 +1,65 @@
+footer {
+  width: 100%;
+  padding: 50px 0;
+  border-top: 1px solid rgba(106, 59, 247, 0.3137254902);
+}
+
+.footerCont {
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footerCont p {
+  color: #6030f1;
+  font-family: Russo;
+}
+.footerCont div {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.footerCont div a {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.5764705882);
+  transition: 0.5s;
+}
+.footerCont div a:last-child {
+  display: inline-flex;
+  justify-content: center;
+  align-items: end;
+  font-size: 15px;
+  text-decoration: none;
+  gap: 3px;
+  font-family: Spaces;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 16px;
+}
+.footerCont div a:last-child h2 {
+  font-size: 15px;
+  color: #6030f1;
+}
+.footerCont div a:last-child:hover {
+  background-color: #fff;
+  color: #5127cf;
+  box-shadow: 0 0 10px #6030f1;
+}
+.footerCont div a:hover {
+  color: #5127cf;
+  text-shadow: 0 0 3px #6030f1;
+}
+
+@media (max-width: 1900px) {
+  .footerCont {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 900px) {
+  .footerCont {
+    flex-direction: column;
+    gap: 50px;
+  }
+}/*# sourceMappingURL=Footer.module.css.map */

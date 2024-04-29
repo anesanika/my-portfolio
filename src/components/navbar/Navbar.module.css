@@ -1,0 +1,200 @@
+nav {
+  width: 100%;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  position: absolute;
+  z-index: 100;
+  animation: close 1s;
+}
+@keyframes close {
+  0% {
+    width: 100px;
+    height: 100vh;
+  }
+  50% {
+    width: 100px;
+    height: 0;
+  }
+  100% {
+    width: 100%;
+    height: 50px;
+  }
+}
+
+.slidedNav {
+  height: 100vh;
+  width: 100px;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  animation: slidedAnima 1s;
+}
+@keyframes slidedAnima {
+  0% {
+    width: 100%;
+    height: 50px;
+  }
+  50% {
+    width: 100px;
+    height: 0;
+  }
+  100% {
+    width: 100px;
+    height: 100vh;
+  }
+}
+
+.logoCont {
+  width: 90px;
+  z-index: 101;
+}
+.logoCont img {
+  width: 100%;
+}
+
+.menuBtn {
+  border-radius: 50%;
+  padding: 1px;
+  z-index: 101;
+  box-shadow: 0 0 10px -2px #5127cf;
+}
+.menuBtn button {
+  position: relative;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  transition: 0.4s;
+  cursor: pointer;
+  background-color: #1e1e1e;
+  outline: 1px solid rgba(255, 255, 255, 0.1725490196);
+}
+.menuBtn button:hover {
+  background-color: #fff;
+}
+.menuBtn button:hover span {
+  background-color: #5127cf;
+}
+.menuBtn button:hover span:last-child {
+  transform: translateY(0px) rotate(360deg);
+}
+.menuBtn button:hover span:first-child {
+  transform: rotate(90deg);
+  width: 23px;
+}
+.menuBtn button span {
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.4s;
+}
+.menuBtn button span:last-child {
+  transform: translateY(-5px);
+}
+.menuBtn button span:first-child {
+  transform: translateY(5px);
+}
+
+.slideMenu {
+  position: fixed;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: #181818;
+  transition: 0.8s;
+  display: flex;
+  align-items: center;
+}
+
+.sliderCont {
+  width: 100%;
+  padding: 10px 0;
+  overflow: hidden;
+}
+.sliderCont .linkCont {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  gap: 200px;
+}
+.sliderCont .linkCont a {
+  display: inline-block;
+  font-size: 150px;
+  font-family: Russo;
+  -webkit-text-stroke: 3px #5127cf;
+  color: rgba(24, 24, 24, 0.0901960784);
+  text-decoration: none;
+  transition: 0.5s;
+  animation: fadeAnim 1.5s;
+}
+.sliderCont .linkCont a:hover {
+  color: #fff;
+  -webkit-text-stroke: 0;
+  transform: skewX(-10deg);
+}
+@keyframes fadeAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) skewX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) skewX(0deg);
+  }
+}
+
+.resNavMenu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: #181818;
+  transition: 0.8s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.resNavMenu a {
+  display: inline-block;
+  font-size: 100px;
+  font-family: Russo;
+  -webkit-text-stroke: 3px #5127cf;
+  color: rgba(24, 24, 24, 0.0901960784);
+  text-decoration: none;
+  transition: 0.5s;
+  animation: fadeAnim 1.5s;
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 10px 10px;
+  }
+  .resNavMenu a {
+    font-size: 70px;
+  }
+}
+@media (max-width: 500px) {
+  .slidedNav {
+    width: 70px;
+  }
+  .logoCont {
+    width: 70px;
+  }
+  .menuBtn button {
+    padding: 25px;
+  }
+}/*# sourceMappingURL=Navbar.module.css.map */

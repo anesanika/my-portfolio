@@ -1,0 +1,36 @@
+.portfolioCont {
+  padding: 20px 0;
+  position: relative;
+}
+
+.pHeader {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  font-family: Russo;
+  color: #fff;
+  text-shadow: 0 0 10px #5127cf;
+}
+.pHeader h1 {
+  font-size: 100px;
+}
+
+.projectCont {
+  padding: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+@media (max-width: 1100px) {
+  .pHeader h1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 700px) {
+  .projectCont {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=Portfolio.module.css.map */

@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection{
+  background-color: #fff;
+  color: #5127cf;
+}
+
+::-webkit-scrollbar{
+  width: 7px;
+}
+::-webkit-scrollbar-track{
+  background: transparent;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #5127cf;
+  border-radius: 3px;
+}
+
+@font-face {
+  font-family: Russo;
+  src: url(./assets/fonts/Russo.ttf);
+}
+@font-face {
+  font-family: Spaces;
+  src: url(./assets/fonts/Space.ttf);
+}
+
+.content{
+  width: 1800px;
+  max-width: 100%;
+  margin: auto;
+}
+
+
+body{
+  background-color: #1e1e1e;
+}

@@ -1,0 +1,85 @@
+.cardBg {
+  width: 45%;
+  background-color: rgba(22, 22, 22, 0.2666666667);
+  padding: 20px 20px 50px 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px -1px #fff;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  opacity: 0;
+}
+.cardBg:hover .cardCont {
+  box-shadow: 0 10px 70px -20px rgba(81, 39, 207, 0.5882352941);
+}
+.cardBg > a {
+  transform: translateY(23px);
+  display: inline-block;
+  color: #fff;
+  font-size: 23px;
+  font-weight: bold;
+  font-family: Spaces;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.cardBg > a:hover {
+  transform: translate(3px, 23px);
+}
+
+.cardCont {
+  z-index: 6;
+  transition: 0.7s;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.cardCont a {
+  width: 100%;
+}
+.cardCont a img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+}
+
+.scrollAnimation {
+  animation: scrollAnima 1s;
+  opacity: 1;
+}
+
+@keyframes scrollAnima {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.lightMouse {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  background-color: rgba(128, 0, 128, 0.411);
+  box-shadow: 0 0 200px 85px rgb(128, 0, 128);
+  width: 10px;
+  height: 10px;
+  z-index: 5;
+}
+
+@media (max-width: 700px) {
+  .cardBg {
+    width: 90%;
+  }
+}
+@media (max-width: 400px) {
+  .cardBg {
+    padding: 10px 10px 40px 10px;
+  }
+}/*# sourceMappingURL=Card.module.css.map */
